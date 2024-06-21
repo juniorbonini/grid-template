@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #121214;
+  --text-color: #c4c4cc;
+  --subtitle-color: #e1e1e6;
+  --title-color: #02799d;
+  --card-background: #202024;
+  --border-color: #323238;
+}
+
+body {
+  background: var(--background-color);
+  display: grid;
+  justify-content: center;
+  padding: 4.5rem 6.5rem;
+  font-family: "Mulish", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 22.875rem);
+  gap: 3rem 3.75rem;
+  place-content: center;
+}
+
+header {
+  margin-bottom: 5rem;
+}
+
+header h1 {
+  font-size: 3.643rem;
+  color: var(--title-color);
+  font-weight: 900;
+  line-height: 4.563rem;
+}
+
+header p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.galaxy-card {
+  background-color: var(--card-background);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  p {
+    color: var(--text-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 24px 32px 32px;
+  }
+}
+
+h2 {
+  color: var(--subtitle-color);
+  font-weight: 900;
+  font-size: 2.25rem;
+  padding: 24px 32px 0;
+}
